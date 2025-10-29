@@ -1,5 +1,5 @@
-﻿using Tyuiu.KalininaMA.Sprint3.Task1.V21.Lib;
-namespace Tyuiu.KalininaMA.Sprint3.Task1.V21
+﻿using Tyuiu.KalininaMA.Sprint3.Task2.V19.Lib;
+namespace Tyuiu.KalininaMA.Sprint3.Task2.V19
 {
     class Program
     {
@@ -9,14 +9,14 @@ namespace Tyuiu.KalininaMA.Sprint3.Task1.V21
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Оператор цикла for                                                      *");
-            Console.WriteLine("* Задание #1                                                              *");
-            Console.WriteLine("* Вариант #21                                                             *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #19                                                             *");
             Console.WriteLine("* Выполнила: Калинина Мария Александровна | РППб-25-1                     *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
 
-            Console.WriteLine("*Написать программу используя цикл while, произведение ряда по формуле,   *");
-            Console.WriteLine("* при х=1                                                                 *");
+            Console.WriteLine("*Написать программу используя цикл do...while, которая вычисляет сумму    *");
+            Console.WriteLine("*ряда по формуле                                                          *");
 
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
@@ -24,20 +24,18 @@ namespace Tyuiu.KalininaMA.Sprint3.Task1.V21
             Console.WriteLine("***************************************************************************");
 
             DataService ds = new DataService();
-            int value = 1;
-            int startValue = 1;
-            int stopValue = 12;
-
-            Console.WriteLine("Переменная Х = " + value);
-            Console.WriteLine("Старт шага = " + startValue);
-            Console.WriteLine("Конец шага = " + stopValue);
+            Console.WriteLine("Введите начальное значение: ");
+            int startValue = Convert.ToInt32(Console.ReadLine());
+            int stopValue = 10;
+            Console.WriteLine("Конечное значение = " + stopValue);
 
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Произведение рада = " + ds.GetMultiplySeries(value, startValue, stopValue));
+            var result = ds.GetSumSeries(startValue, stopValue);
+            Console.WriteLine(result);
             Console.ReadKey();
         }
     }
