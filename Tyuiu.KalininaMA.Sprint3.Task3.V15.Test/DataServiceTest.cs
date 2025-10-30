@@ -9,7 +9,7 @@ namespace Tyuiu.KalininaMA.Sprint3.Task3.V15.Test
         {
             DataService ds = new DataService();
             string str = "lrmmse mg sermmmrt";
-            int wait = 2;
+            int wait = 1;
             var res = ds.GetMinCharCount(str, 'm');
             Assert.AreEqual(wait, res);
         }

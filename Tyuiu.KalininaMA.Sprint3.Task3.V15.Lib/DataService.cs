@@ -13,16 +13,23 @@ namespace Tyuiu.KalininaMA.Sprint3.Task3.V15.Lib
                     count++;
                 else
                 {
-                    if (count <= 1)
-                        count = 0;
-                    else
-                       if (count < min)
+                    if (count > 0) 
                     {
-                        min = count;
+                        if (count < min)
+                        {
+                            min = count;
+                        }
                     }
                     count = 0;
-
                 }
+                if (count > 0 && count < min)
+                {
+                    min = count;
+                }
+
+                if (count <= 1)
+                    count = 0;
+
             }
             return min;
         }
