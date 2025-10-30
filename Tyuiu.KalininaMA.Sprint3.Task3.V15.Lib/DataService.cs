@@ -1,5 +1,5 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint3;
-namespace Tyuy.KalininaMA.Sprint3.Task3.V15.Lib
+namespace Tyuiu.KalininaMA.Sprint3.Task3.V15.Lib
 {
     public class DataService : ISprint3Task3V15
     {
