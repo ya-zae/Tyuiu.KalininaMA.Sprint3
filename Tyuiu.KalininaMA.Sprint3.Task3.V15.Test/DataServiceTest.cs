@@ -2,7 +2,7 @@
 namespace Tyuiu.KalininaMA.Sprint3.Task3.V15.Test
 {
     [TestClass]
-    public sealed class DataService
+    public sealed class DataServiceTest
     {
         [TestMethod]
         public void TestMethod1()

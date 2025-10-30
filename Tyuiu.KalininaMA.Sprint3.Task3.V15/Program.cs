@@ -1,10 +1,11 @@
 ﻿using Tyuiu.KalininaMA.Sprint3.Task3.V15.Lib;
-namespace Tyuiu.KalininaMA.Sprint3.Task2.V19
+namespace Tyuiu.KalininaMA.Sprint3.Task2.V15
 {
     class Program
     {
         static void Main(string[] args)
         {
+            DataService ds = new DataService();
             Console.Title = "Спринт #3 | Выполнила: Калинина Мария Александровна | РППб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
