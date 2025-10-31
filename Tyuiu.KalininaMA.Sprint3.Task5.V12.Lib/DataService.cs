@@ -11,7 +11,7 @@ namespace Tyuiu.KalininaMA.Sprint3.Task5.V12.Lib
             {
                 for (j = startValue2; j <= stopValue2; j++)
                 {
-                    sumSeries = sumSeries + (Math.Cos(1) + (x / 2));
+                    sumSeries = sumSeries + (Math.Cos(j) + (x / 2));
                 }
             }
             return Math.Round(sumSeries, 3);

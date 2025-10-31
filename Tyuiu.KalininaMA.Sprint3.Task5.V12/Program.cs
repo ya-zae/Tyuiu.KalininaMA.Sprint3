@@ -20,7 +20,7 @@ namespace Tyuiu.KalininaMA.Sprint3.Task5.V12
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 5;
+            int x = 4;
             int startValue1 = 1;
             int stopValue1 = 3;
             int startValue2 = 1;
